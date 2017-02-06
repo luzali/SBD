@@ -1,3 +1,6 @@
+--HOLAAA
+
+
 --Procedimientos almacenados PORTAL 
 
 create procedure dbo.registrar_cliente
@@ -19,7 +22,7 @@ begin
   if not exists(select * 
                   from dbo.cliente (nolock)
                  where email = @email)
-     insert into dbo.cliente(nombre, email, contraseña, direccion, telefono)
+     insert into dbo.cliente(nombre, email, contraseÃ±a, direccion, telefono)
      values(@nombre, @email, @contrasenia, @direccion, @telefono)
  
 end
